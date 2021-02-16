@@ -51,7 +51,7 @@ def coffee(choice_local):
         resources["money"] += MENU[choice_local]['cost']
         for i in MENU[choice]['ingredients']:
             resources[i] -= MENU[choice]['ingredients'][i]
-        print("Here is ${} in change.".format(total_input_coin - MENU[choice_local]['cost']))
+        print("Here is ${} in change.".format(round(total_input_coin - MENU[choice_local]['cost'],2)))
         print("Here is your {} ☕️. Enjoy!".format(choice_local))
     else:
         print("Sorry that's not enough money. Money refunded.")
