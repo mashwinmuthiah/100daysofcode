@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca7e1350-ab8b-47b5-92cf-61a78a5f9632" name="Default Changelist" comment="Day 17 - Quiz game">
+    <list default="true" id="ca7e1350-ab8b-47b5-92cf-61a78a5f9632" name="Default Changelist" comment="Day 17 - Quiz game Complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz_brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_brain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613679514154</updated>
-      <workItem from="1613679516224" duration="2933000" />
+      <workItem from="1613679516224" duration="3217000" />
     </task>
     <task id="LOCAL-00001" summary="Day 17">
       <created>1613679584705</created>
@@ -103,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613680476068</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Day 17 - Quiz game Complete">
+      <created>1613682689385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613682689385</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Day 17" />
     <MESSAGE value="Day 17 - Quiz game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 17 - Quiz game" />
+    <MESSAGE value="Day 17 - Quiz game Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 17 - Quiz game Complete" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Day17$question_model.coverage" NAME="question_model Coverage Results" MODIFIED="1613680237803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
