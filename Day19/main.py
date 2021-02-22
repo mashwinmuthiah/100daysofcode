@@ -1,16 +1,68 @@
-# This is a sample Python script.
+from turtle import Turtle, Screen
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# # Etch-A-Sketch
+# def move_forward():
+#     tim.forward(10)
+#
+#
+# def move_backward():
+#     tim.backward(10)
+#
+#
+# def move_counterclock():
+#     tim.left(10)
+#
+#
+# def move_clockwise():
+#     tim.right(10)
+#
+#
+# def clear_screen():
+#     tim.clear()
+#     tim.reset()
+#
+#
+# screen.listen()
+# screen.onkey(key="w", fun=move_forward)
+# screen.onkey(key="s", fun=move_backward)
+# screen.onkey(key="a", fun=move_clockwise)
+# screen.onkey(key="d", fun=move_counterclock)
+# screen.onkey(key="c", fun=clear_screen)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Turtle Racing Game
 
+is_race_on = False
+screen = Screen()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+screen.setup(width=500, height=400)
+user_bet = screen.textinput(title="Make you Bet", prompt="Which turtle will win the race? Enter a color: ")
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+y_positions = [-70, -40, -10, 20, 50, 80]
+all_turtles = []
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+for turtle_index in range(0, 6):
+    new_turtle = Turtle(shape='turtle')
+    new_turtle.color(colors[turtle_index])
+    new_turtle.penup()
+    new_turtle.goto(x=-230, y=y_positions[turtle_index])
+    all_turtles.append(new_turtle)
+
+if user_bet:
+    is_race_on = True
+
+while is_race_on:
+    for our_turtle in all_turtles:
+        rand_distance = random.randint(0, 10)
+        our_turtle.forward(rand_distance)
+        if our_turtle.xcor() > 230:
+            is_race_on = False
+            win_color = our_turtle.pencolor()
+            if win_color == user_bet:
+                print("You've won! The color of the winning turtle is {}".format(win_color))
+            else:
+                print("You've Lost! The color of the winning turtle is {}".format(win_color))
+            break
+
+screen.exitonclick()
